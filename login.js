@@ -1,5 +1,10 @@
 function addUser() {
     username=document.getElementById('username').value;
-    localStorage.setItem("username", username);
-    window.location="chitchat-room.html";
+    if(username == "") {
+        alert("Please enter a username");
+    }
+    else {
+        localStorage.setItem("username", username);
+        window.location="chitchat-room.html";
+    }
 }

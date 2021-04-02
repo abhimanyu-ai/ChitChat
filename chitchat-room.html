@@ -18,7 +18,7 @@
     <body>
         <div class="container">
         <center>
-            <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+            <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
             <h1 class="header">	
                 ChitChat <sup>
             <img src="m2.png">
@@ -27,10 +27,11 @@
         <h3 id="username" class="color_white"></h3>
         <div class="form-group input_div_room_page">
             <label>Add Room</label>
-            <input type="text" id="room_name" class="form-control" placeholder="Enter your roomname here">
+            <input type="text" id="roomname" class="form-control" placeholder="Enter your roomname here">
         </div>
         <button onclick="addRoom()" class="btn btn-success">Add Room</button>
         <h3 class="color_white">Trending Rooms</h3>
+        <div id="output"> </div>
         </center>
         </div>
         </body>

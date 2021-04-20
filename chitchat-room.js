@@ -22,7 +22,7 @@ function addRoom() {
 
       localStorage.setItem("roomname", roomname);
 
-      window.location = "kwitter_page.html";
+      window.location = "chitchat-page.html";
 }
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
       Room_names = childKey;
@@ -36,7 +36,7 @@ getData();
 function redirect(name) {
      console.log(name);
      localStorage.setItem("roomname", name);
-     window.location="kwitter_page.html";
+     window.location="chitchat-page.html";
 }
 function logout() {
      localStorage.removeItem("username");

@@ -16,8 +16,8 @@ document.getElementById("username").innerHTML = "Welcome, " + username + "!";
 function addRoom() {
       roomname = document.getElementById("roomname").value;
 
-      firebase.database().ref("/").child(room_name).update({
-            purpose: "adding roomname"
+      firebase.database().ref("/").child(roomname).update({
+            purpose : "adding roomname"
       });
 
       localStorage.setItem("roomname", roomname);
@@ -29,7 +29,7 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
      //Start code
      console.log("Roomname" + Room_names);
      row="<div class='room_name' id=" + Room_names + "onclick='redirect(this.id)'>#" + Room_names + "</div> <hr>";
-     document.getElementById('output').innerHTML=row;
+     document.getElementById('output').innerHTML+=row;
      //End code
      });});}
 getData();

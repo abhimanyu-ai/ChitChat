@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login to ChitChat</title>
+        <title>ChitChat | From World To Discussions</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -12,10 +12,10 @@
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
         <link rel="stylesheet" type="text/css" href="chitchat.css">
-        <meta property="og:title" content="With ChitChat, Chat From Anywhere!"/>
-        <meta property="og:image" content="https://abhimanyu-ai.github.io/ChitChat/favicon.ico"/>
+        <meta property="og:title" content="ChitChat | From World To Discussions"/>
+        <meta property="og:image" content="https://abhimanyu-ai.github.io/ChitChat/chitchat_header.png"/>
     </head>
-    <body>
+    <body onload="checkUser()">
         <center>
             <h1 class="header">	
                 ChitChat <sup>
@@ -24,8 +24,8 @@
         </h1>
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
             <img src="chitchat_header.png" class="logo">
-            <h3>Chat With Anyone In The World!</h3>
-            <h4>Chat, and Make Friends With Anyone. Join ChitChat today:</h4>
+            <h3>Many things are going on in the world... Be the first to know them!</h3>
+            <h4>Join ChitChat today.</h4>
             <div class="form-group">
                 <label>Username:</label>
                 <input type="text" id="username" class="form-control" placeholder="Enter your username here">

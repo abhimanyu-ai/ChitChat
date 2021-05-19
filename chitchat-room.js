@@ -43,3 +43,8 @@ function logout() {
      localStorage.removeItem("roomname");
      window.location="login.html";
 }
+function userCheck() {
+      if (username == null) {
+            window.location="login.html";
+      }
+}

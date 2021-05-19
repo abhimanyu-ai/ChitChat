@@ -15,7 +15,7 @@
         <meta property="og:title" content="With ChitChat, Chat From Anywhere!"/>
         <meta property="og:image" content="https://abhimanyu-ai.github.io/ChitChat/favicon.ico"/>
     </head>
-    <body>
+    <body onload="userCheck()">
         <div class="container">
         <center>
             <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
@@ -29,7 +29,7 @@
             <label>Create your own hashtag</label>
             <input type="text" id="roomname" class="form-control" placeholder="Enter your hashtag name here">
         </div>
-        <button onclick="addRoom()" class="btn btn-success">Create Hashtag</button>
+        <button onclick="addRoom()" class="btn btn-success" id="addHashtag">Create Hashtag</button>
         <h3 class="color_white">Trending Hashtags</h3>
         <div id="output"> </div>
         </center>

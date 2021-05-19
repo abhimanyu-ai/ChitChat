@@ -8,3 +8,8 @@ function addUser() {
         window.location="chitchat-room.html";
     }
 }
+function checkUser() {
+    if (username == null) {
+        window.location="chitchat-room.html";
+    }
+}
